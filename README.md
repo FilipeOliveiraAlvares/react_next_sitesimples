@@ -20,3 +20,17 @@ para rodar local
 ### npm install --save bootstrap
 ### npm install --save reactstrap react react-dom
 para instalar bootstrap
+
+### npm install --save @zeit/next-css
+colocar css direto no codigo
+
+
+###  npm i --save @fortawesome/fontawesome-svg-core  
+### npm install --save @fortawesome/free-solid-svg-icons
+### npm install --save @fortawesome/react-fontawesome   
+instalador de icones
+
+###  npm install --save axios
+realizar a conexão com a API
+
+
