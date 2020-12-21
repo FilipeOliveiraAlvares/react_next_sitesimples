@@ -51,16 +51,17 @@ const Home = (data) => (
             </style>
             <Container className='text-center'>
                 <div>
-                    <h1 className='display-4'>Texto exemplo Titulo</h1>
-                    <p className='lead pb-4'>Informações referentes ao site - classe jumbotrom, importa e utiliza.</p>
+                    <h1 className='display-4'>{data.response.titulo}</h1>
+                    <p className='lead pb-4'>{data.response.subtitulo}</p>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-4">
                         <div className="rounded-circle circulo centralizar">
-                            <FontAwesomeIcon icon="dolly" />
+                            <FontAwesomeIcon icon={data.response.servUmIcone} />
                         </div>
-                        <h2 className='mt-4 mb-4'>Exemplo</h2>
+                        {console.log(data)}
+                        <h2 className='mt-4 mb-4'>{data.response.servUmTitulo}</h2>
                         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
 
                     </div>
@@ -88,7 +89,7 @@ const Home = (data) => (
 
 Home.getInitialProps = async () => {
     var response = await axios.get('http://localhost:8081/home');
-    console.log(response);
+    //console.log(response.data);
     return { response: response.data }
 }
 export default Home;
