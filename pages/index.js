@@ -62,23 +62,23 @@ const Home = (data) => (
                         </div>
                         {console.log(data)}
                         <h2 className='mt-4 mb-4'>{data.response.servUmTitulo}</h2>
-                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <p>{data.response.servUmDescricao}</p>
 
                     </div>
                     <div class="col-lg-4">
                         <div className="rounded-circle circulo centralizar">
-                            <FontAwesomeIcon icon="project-diagram" />
+                            <FontAwesomeIcon icon={data.response.servDoisIcone} />
                         </div>
-                        <h2 className='mt-4 mb-4'>Exemplo</h2>
-                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                        <h2 className='mt-4 mb-4'>{data.response.servDoisTitulo}</h2>
+                        <p>{data.response.servDoisDescricao}</p>
 
                     </div>
                     <div class="col-lg-4">
                         <div className="rounded-circle circulo centralizar">
-                            <FontAwesomeIcon icon="dolly-flatbed" />
+                            <FontAwesomeIcon icon={data.response.servTresIcone} />
                         </div>
-                        <h2 className='mt-4 mb-4'>Exemplo</h2>
-                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <h2 className='mt-4 mb-4'>{data.response.servTresTitulo}</h2>
+                        <p>{data.response.servTresDescricao}</p>
 
                     </div>
                 </div>
